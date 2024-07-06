@@ -1,0 +1,40 @@
+
+# POST request to create a new task
+POST http://localhost:3000/localhost:3000/auth/register
+Content-Type: application/json
+
+{
+    "fullName": "John Doe",
+    "email": "hackyraji02@gmail.com",
+    "password": "ajecoder",
+}
+
+###
+# GET request to retrieve all tasks
+GET http://localhost:3000/auth/register
+Accept: application/json
+
+###
+
+# PUT request to update a task
+PUT http://localhost:3000/tasks/2d1f39a9-7daf-4d67-8bbc-deade28ac051
+Content-Type: application/json
+
+{
+    "title": "Updated Task",
+    "description": "Updated description of the task"
+}
+
+###
+# PATCH request to update a task
+PATCH http://localhost:3000/tasks
+
+
+{
+    "status": "Completed",
+}
+
+###
+
+# DELETE request to delete a task
+DELETE http://localhost:3000/tasks/2d1f39a9-7daf-4d67-8bbc-deade28ac051
